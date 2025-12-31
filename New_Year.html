@@ -561,7 +561,7 @@ function showSubline(text, waitMs=850){
 async function handleNo(stepNum, retryMsg, afterSecondNo){
   if (noRetry[stepNum] === 0){
     noRetry[stepNum] = 1;
-    await showSubline("Ek baar aur? 😄", 650);
+    await showSubline("Ek baar aur souch lo? 😄", 650);
     // re-render same step again
     renderStep(stepNum);
   } else {
